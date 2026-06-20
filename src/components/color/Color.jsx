@@ -4,7 +4,7 @@ import "./style.css";
 
 const Color = () => {
     const [mode, setMode] = useState('hex');
-    const [color, setColor] = useState('#1b1b1b');
+    const [color, setColor] = useState('#5c0894');
 
     const helper = (length)=>{
         return Math.floor(Math.random()*length);
