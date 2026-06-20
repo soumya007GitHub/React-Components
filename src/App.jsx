@@ -5,6 +5,7 @@ import Color from './components/color/Color.jsx';
 import StarRating from './components/star-rating/index.jsx';
 import { Carousel } from './components/carousel/index.jsx';
 import LoadMore from './components/load-more/index.jsx';
+import TreeView from './components/tree-view/index.jsx';
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       <Color/>
       <StarRating/> */}
       {/* <Carousel url={'https://picsum.photos/v2/list'} page={1} limit={6}/> */}
-      <LoadMore/>
+      {/* <LoadMore/> */}
+      <TreeView/>
     </>
   )
 }
