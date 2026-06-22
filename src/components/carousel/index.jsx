@@ -52,7 +52,7 @@ export const Carousel = ({ url, page = 1, limit = 6 }) => {
     }
 
     return (
-        <div className='wrapper'>
+        <div className='parent-container'>
             {loading ? <h3>Loading...</h3> : ''}
             {error != null ? <h3>{error}</h3> : ''}
             {data.length > 0 && <div className='container'>

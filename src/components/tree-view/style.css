@@ -12,6 +12,12 @@
      display: flex;
      flex-direction: column
 }
+.content-view{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .treeItem{
     margin: 10px 0px;
     padding-left: 10px;

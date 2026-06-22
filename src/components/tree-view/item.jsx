@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import Parent from './parent';
+import ContentView from './content';
 
-const TreeItem = ({ label, to, children = [] }) => {
+const TreeItem = ({ label, to, children = [], onSelect }) => {
     const [showChildren, setShowChildren] = useState(false);
     const helper = (e) => {
         e.stopPropagation();
+
+        onSelect(label);
 
         if (children?.length > 0) {
             setShowChildren(prev => !prev);
@@ -16,7 +19,7 @@ const TreeItem = ({ label, to, children = [] }) => {
                 ? (showChildren ? '-' : '+')
                 : null}</span>
             {
-                showChildren && <Parent data={children} />
+                showChildren && <Parent data={children} onSelect={onSelect} />
             }
         </li>
     )

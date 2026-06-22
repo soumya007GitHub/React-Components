@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-      {/* <Accordion/>
-      <Color/>
-      <StarRating/> */}
-      {/* <Carousel url={'https://picsum.photos/v2/list'} page={1} limit={6}/> */}
-      {/* <LoadMore/> */}
+      <Accordion/>
+      {/* <Color/> */}
+      <StarRating/>
+      <Carousel url={'https://picsum.photos/v2/list'} page={1} limit={6}/>
+      <LoadMore/>
       <TreeView/>
     </>
   )
