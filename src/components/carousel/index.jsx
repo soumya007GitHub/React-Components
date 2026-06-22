@@ -10,11 +10,13 @@ export const Carousel = ({ url, page = 1, limit = 6 }) => {
     const [current, setCurrent] = useState(0);
     useEffect(() => {
         async function fetchData() {
+            console.log("component loaded");
             setLoading(true);
             try {
                 let temp = await fetch(`${url}?page=${page}&limit=${limit}`);
                 let temp2 = await temp.json();
                 setData(temp2);
+                console.log(temp2);
                 setLoading(false);
             } catch (e) {
                 setError("Got error while fetching");

@@ -5,10 +5,8 @@ const Parent = ({ data = [], onSelect }) => {
   return (
     <ul>
       {
-        data.map((item) => {
-          return <>
-            <TreeItem label={item.label} to={item.to} children={item?.children} key={item.label} onSelect={onSelect}/>
-          </>
+        data.map((item, index) => {
+          return <TreeItem label={item.label} to={item.to} children={item?.children} key={item.label} onSelect={onSelect} key={index}/>
         })
       }
     </ul>
