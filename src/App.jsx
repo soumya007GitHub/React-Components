@@ -3,10 +3,11 @@ import './App.css';
 import Accordion from './components/accordion/Accordion.jsx';
 import Color from './components/color/Color.jsx';
 import StarRating from './components/star-rating/index.jsx';
-import { Carousel } from './components/carousel/index.jsx';
+import {Carousel} from './components/carousel/index.jsx';
 import LoadMore from './components/load-more/index.jsx';
 import TreeView from './components/tree-view/index.jsx';
 import QrCode from './components/qr-code/index.jsx';
+import Theme from './components/theme/index.jsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       {/* <LoadMore/> */}
       {/* <TreeView/> */}
       {/* <QrCode/> */}
+      <Theme/>
     </>
   )
 }

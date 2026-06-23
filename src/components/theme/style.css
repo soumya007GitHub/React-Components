@@ -1,0 +1,33 @@
+:root{
+    --primary-color: #000000;
+    --primary-bg: #fcfcfc;
+    --primary-btn-bg: #4d31cb;
+    --primary-btn-color: #fff;
+}
+
+[data-theme='dark']{
+    --primary-color: #ffffff;
+    --primary-bg: #000000;
+    --primary-btn-bg: #4d31cb;
+    --primary-btn-color: #000000;
+}
+
+.theme-container{
+    background-color: var(--primary-bg);
+    color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+.theme-btn{
+    background-color: var(--primary-btn-bg);
+    color: var(--primary-btn-color);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
