@@ -8,6 +8,7 @@ import LoadMore from './components/load-more/index.jsx';
 import TreeView from './components/tree-view/index.jsx';
 import QrCode from './components/qr-code/index.jsx';
 import Theme from './components/theme/index.jsx';
+import ScrollIndicator from './components/scroll-indicator/index.jsx';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       {/* <LoadMore/> */}
       {/* <TreeView/> */}
       {/* <QrCode/> */}
-      <Theme/>
+      {/* <Theme/> */}
+      <ScrollIndicator url='https://dummyjson.com/products?limit=300'/>
     </>
   )
 }
