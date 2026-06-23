@@ -9,6 +9,7 @@ import TreeView from './components/tree-view/index.jsx';
 import QrCode from './components/qr-code/index.jsx';
 import Theme from './components/theme/index.jsx';
 import ScrollIndicator from './components/scroll-indicator/index.jsx';
+import Modal from './components/modal/index.jsx';
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
       {/* <TreeView/> */}
       {/* <QrCode/> */}
       {/* <Theme/> */}
-      <ScrollIndicator url='https://dummyjson.com/products?limit=300'/>
+      {/* <ScrollIndicator url='https://dummyjson.com/products?limit=300'/> */}
+      <Modal/>
     </>
   )
 }
